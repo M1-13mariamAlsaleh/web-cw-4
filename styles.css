@@ -1,11 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap');
 body {
   /* المطلوب الأول هنا */
   text-align: center;
+  background-size: cover;
+  font-family: 'Cairo';
+  background-image: url(./img/KuwaitCodesWallpaper.png);
   background-size: cover;
 }
 
 /* المطلوب الثاني هنا */
 nav {
+  display: flex;
+  justify-content:space-evenly ;
 }
 .nav-elements {
 }
@@ -15,6 +21,9 @@ nav {
   width: 400px;
   height: 500px;
   background-color: white;
+  box-shadow:rgba(0, 0, 0, 0.678);
+  border-radius: 12px;
+  box-shadow: 2px 2px rgba(51, 51, 51, 0.671);
 }
 
 img {
@@ -22,9 +31,17 @@ img {
   width: 120px;
   height: 120px;
   margin-top: 20px;
+  box-shadow: 2px 2px rgba(51, 51, 51, 0.671); 
+  border-radius:100px;
+  border-style: solid;
+  border-color:#5AB1BB;
+  border-width: 5px;
 }
 
 .hobbies {
+  display:grid;
+  grid-template-columns: auto auto auto;
+  
   /* المطلوب السادس هنا */
 }
 
@@ -41,4 +58,8 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+.meme:hover{
+  transform: translate(0px, -50px) rotate(15deg);
+  box-shadow: rgb(226, 41, 171);
 }

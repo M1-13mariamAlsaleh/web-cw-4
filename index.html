@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>بطاقتي التعريفية</title>
+    <link rel="stylesheet" href="./styles.css">
     <!--  قم بربط هذه الصفحة  مع css -->
     <!--  ربط google fonts -->
   </head>
 
   <body>
     <nav>
-      <div class="nav-elements">
-        <a href="#">هويّتي</a>
-        <a href="#">هواياتي</a>
+      <div style="border-style: solid;
+      border-color:#015d88;
+      border-width: 2px;" class="nav-elements">
+        <a style="color:rgb(38, 156, 235);;" href="#name">هويّتي</a>
+        <span>,</span>
+        <a style="color:rgb(38, 156, 235);;" href="#footer">هواياتي</a>
       </div>
     </nav>
-    <h1>مرحباً، أنا طالب في مسار الويب</h1>
+    <h1 id="name">مرحباً، أنا مريم الصالح طالبه في مسار الويب</h1>
     <h2>وسوف أنشئ بطاقتي التعريفية</h2>
 
     <!--------------------(البطاقة)-------------------->
@@ -25,13 +29,13 @@
       <img src="./img/kid.png" alt="person" />
 
       <!-------------------(البيانات)------------------>
-      <h1>اسمك</h1>
+      <h1>مريم احمد الصالح</h1>
       <h4>هواياتي المفضلة</h4>
 
-      <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+      <ul style="color: royalblue; ">
+        <li><b>البرمجه</b></li>
+        <li><b>الحياكه</b></li>
+        <li><b>العزف</b></li>
       </ul>
 
       <a href="https://code.kw/">
@@ -40,6 +44,10 @@
     </div>
     <!-------------------(الهوايات)------------------>
     <!-- قم بإضافة صور هواياتك هنا -->
-    <div class="hobbies"></div>
+    <div id="footer" class="hobbies">
+      <div class="hobby1 meme"><img src="./img/mmm.png" alt=""></div>
+      <div class="hobby2 meme"><img src="./img/مريم.png" alt=""></div>
+      <div class="hobby3 meme"><img src="./img/piano.png" alt=""></div>
+    </div>
   </body>
 </html>
